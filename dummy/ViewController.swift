@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textFieldUsername: UITextField!
     @IBOutlet weak var textFieldpassword: UITextField!
@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonSignin.addTarget(self, action: #selector(signIn), for: .touchDown)
+        textFieldUsername.delegate = self
+        textFieldpassword.delegate = self
     }
     
     
@@ -40,6 +42,11 @@ class ViewController: UIViewController {
             let loggedVC = segue.destination as! LoggedUserVC
             loggedVC.message = textFieldUsername.text!
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 

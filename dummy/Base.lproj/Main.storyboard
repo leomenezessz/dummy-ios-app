@@ -25,7 +25,7 @@
                                 <rect key="frame" x="20" y="364" width="374" height="34"/>
                                 <accessibility key="accessibilityConfiguration" identifier="InputPassword"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edG-gA-jty">
                                 <rect key="frame" x="20" y="446" width="374" height="30"/>
