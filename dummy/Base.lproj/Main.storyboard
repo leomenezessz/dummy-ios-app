@@ -17,18 +17,19 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-cP-BvU">
                                 <rect key="frame" x="20" y="306" width="374" height="34"/>
-                                <accessibility key="accessibilityConfiguration" identifier="userame"/>
+                                <accessibility key="accessibilityConfiguration" identifier="inputUserName"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aO-Zh-xvn">
                                 <rect key="frame" x="20" y="364" width="374" height="34"/>
-                                <accessibility key="accessibilityConfiguration" identifier="password"/>
+                                <accessibility key="accessibilityConfiguration" identifier="InputPassword"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edG-gA-jty">
                                 <rect key="frame" x="20" y="446" width="374" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="buttonSignIn"/>
                                 <state key="normal" title="SIGN IN"/>
                                 <connections>
                                     <segue destination="PKh-Mw-ZsI" kind="show" identifier="showLoggedScreen" id="8rS-ti-8nz"/>
@@ -69,7 +70,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqm-zq-nhx">
                                 <rect key="frame" x="20" y="421" width="374" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="welcome"/>
+                                <accessibility key="accessibilityConfiguration" identifier="labelHello"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
